@@ -14,7 +14,7 @@ class AcceleratorUtilTest : public ::testing::Test {
     // Eagerly load advapi32.dll since tests need it.
     CHECK(::LoadLibrary(L"advapi32.dll"));
   }
-}
+};
 #endif  // defined(OS_WIN)
 
 TEST(AcceleratorUtilTest, StringToAccelerator) {
